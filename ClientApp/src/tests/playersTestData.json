@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Jeff",
+        "tasksDone": 4,
+        "currPlayer": true
+    },
+    {
+        "id": 2,
+        "name": "Caleb",
+        "tasksDone": 1
+    },
+    {
+        "id": 3,
+        "name": "Nicole",
+        "tasksDone": 0
+    },
+    {
+        "id": 4,
+        "name": "Anda",
+        "tasksDone": 6
+    }
+]

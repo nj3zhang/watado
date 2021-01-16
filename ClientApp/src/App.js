@@ -9,6 +9,10 @@ import {SignUp} from "./SignUp";
 
 import './custom.scss'
 
+// For testing:
+import TestData from "./tests/playersTestData.json"
+
+
 export default class App extends Component {
   static displayName = App.name;
 
@@ -18,7 +22,9 @@ export default class App extends Component {
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={SignUp} />
         <Layout>
-          <Route exact path='/' component={MapCanvas} />
+          <Route exact path='/' render={(props) => (
+            <MapCanvas {...props} playersData={TestData} />
+          )} />
           <Route path='/counter' component={Counter} />
           <Route path='/fetch-data' component={FetchData} />
         </Layout>
