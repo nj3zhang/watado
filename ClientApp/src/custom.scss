@@ -1,4 +1,8 @@
 /* Provide sufficient contrast against white background */
+html, body {
+  background-color: #FAEEE7;
+}
+
 a {
   color: #0366d6;
 }
@@ -11,4 +15,14 @@ code {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
 }
