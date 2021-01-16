@@ -7,7 +7,6 @@ import './NavMenu.scss';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import PeopleIcon from '@material-ui/icons/People';
-import BlobIconPNG from './blob.png';
 
 export default function NavMenu () {
     return (
