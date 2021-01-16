@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router';
 import { Layout } from './components/Layout';
-import { Home } from './components/Home';
+import MapCanvas from './components/map-canvas/MapCanvas';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import {Login} from "./Login";
@@ -18,7 +18,7 @@ export default class App extends Component {
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={SignUp} />
         <Layout>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' component={MapCanvas} />
           <Route path='/counter' component={Counter} />
           <Route path='/fetch-data' component={FetchData} />
         </Layout>
