@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Navbar, NavbarBrand} from 'reactstrap';
 
-
+import MenuDropdown from './MenuDropdown';
 import './NavMenu.scss';
 
 import IconButton from '@material-ui/core/IconButton';
@@ -30,7 +30,7 @@ export default function NavMenu () {
               <img alt="" className="tadoBarUser-size" src={BlobIconPNG} />
               </IconButton>
             </div>
-
+            <MenuDropdown/>
 
           </Container>
 
