@@ -2,18 +2,18 @@
     {
         "id": 1,
         "name": "Jeff",
-        "tasksDone": 4,
+        "tasksDone": 1,
         "currPlayer": true
     },
     {
         "id": 2,
         "name": "Caleb",
-        "tasksDone": 1
+        "tasksDone": 3
     },
     {
         "id": 3,
         "name": "Nicole",
-        "tasksDone": 0
+        "tasksDone": 3
     },
     {
         "id": 4,
