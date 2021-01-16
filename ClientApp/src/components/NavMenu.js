@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Navbar, NavbarBrand} from 'reactstrap';
 
+
 import './NavMenu.scss';
 
 import IconButton from '@material-ui/core/IconButton';
@@ -32,6 +33,7 @@ export default function NavMenu () {
 
 
           </Container>
+
         </Navbar>
       </header>
     );
