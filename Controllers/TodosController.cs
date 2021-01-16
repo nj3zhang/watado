@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DotNetCoreSqlDb.Models;
 
-namespace DotNetCoreSqlDb.Controllers
+namespace tado.Controllers
 {
     public class TodosController : Controller
     {
