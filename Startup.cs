@@ -1,17 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using DotNetCoreSqlDb.Models;
-using Microsoft.EntityFrameworkCore;
 
-
-
-namespace DotNetCoreSqlDb
+namespace tado
 {
     public class Startup
     {
@@ -25,6 +20,7 @@ namespace DotNetCoreSqlDb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllersWithViews();
 
             // In production, the React files will be served from this directory
@@ -32,9 +28,6 @@ namespace DotNetCoreSqlDb
             {
                 configuration.RootPath = "ClientApp/build";
             });
-
-            services.AddDbContext<MyDatabaseContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,7 +49,6 @@ namespace DotNetCoreSqlDb
             app.UseSpaStaticFiles();
 
             app.UseRouting();
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

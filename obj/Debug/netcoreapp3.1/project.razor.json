@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/nicole/Desktop/watado/tado.csproj",
+  "FilePath": "/Users/nicole/Desktop/tado/tado/tado.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14447,12 +14447,12 @@
   "RootNamespace": "tado",
   "Documents": [
     {
-      "FilePath": "/Users/nicole/Desktop/watado/Pages/Error.cshtml",
+      "FilePath": "/Users/nicole/Desktop/tado/tado/Pages/Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/nicole/Desktop/watado/Pages/_ViewImports.cshtml",
+      "FilePath": "/Users/nicole/Desktop/tado/tado/Pages/_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
