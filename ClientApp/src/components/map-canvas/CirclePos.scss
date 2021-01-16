@@ -1,0 +1,23 @@
+.circle-pos {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 113px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+// .filler {
+//     flex: 1;
+//     height: 113px;
+//     width: 150px;
+// }
+.name-section {
+    font-size: 24px;
+    text-align: center;
+    position: fixed;
+}

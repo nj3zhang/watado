@@ -39,3 +39,12 @@ html {
   height: 40px;
   width: 45px;
 }
+.left-bar {
+  position: relative;
+  left: -50px;
+}
+
+.right-bar {
+  position: relative;
+  right: -50px;
+}
