@@ -17,7 +17,6 @@ const hardPos = [
 const MapCanvas = ({playersData}) => {
     // Update size of map based on browser window size.
     const mapRef = useRef(null);
-    const playerData = playersData[0];
     useEffect(() => {
         const handleResize = () => {
             const scale = Math.min((window.innerWidth-30) / mapRef.current.offsetWidth, (window.innerHeight-100) / mapRef.current.offsetHeight);

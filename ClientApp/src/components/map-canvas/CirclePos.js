@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react';
+import React from 'react';
 import Circle from './Dotted_Circle.svg';
 import './CirclePos.scss';
 
