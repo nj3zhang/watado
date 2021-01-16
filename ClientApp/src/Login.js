@@ -1,6 +1,5 @@
 import React from 'react';
 import './Login.scss';
-import Input from '@material-ui/core/Input';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -13,7 +12,7 @@ export const Login = () => {
         <h1>Welcome to Tado!</h1>
         <div className="top">
             
-            <img src={Ghost}></img>
+            <img alt="" src={Ghost}></img>
             <div className= "verticalLine">
                 <div className= "userInput">
                     <TextField
