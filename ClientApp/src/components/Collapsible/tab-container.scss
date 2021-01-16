@@ -1,0 +1,21 @@
+.tab-container{
+    width: 330px;
+}
+
+.tab-bar{
+    background-color: #5A6A95;
+}
+
+.add-task {
+    position: relative;
+    float: right;
+    margin: 5px;
+    margin-bottom: 0;
+    background-color: #FAEEE7;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgb(27, 27, 27);
+}
+
+.add-task:hover {
+    background-color: #f8e2cf;
+}
