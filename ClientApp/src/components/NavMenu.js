@@ -26,9 +26,6 @@ export default function NavMenu () {
             </div>
             <NavbarBrand className="tadoBrand-color">TaDo</NavbarBrand>   
             <div className="right-bar">
-              <IconButton className="tadoBarUser-size" aria-label="User Account" component="span">
-              <img alt="" className="tadoBarUser-size" src={BlobIconPNG} />
-              </IconButton>
             </div>
             <MenuDropdown/>
 
