@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
 import './collapsible-panel.scss';
 import TabContainer from './tabs-container';
 
@@ -23,9 +22,15 @@ export default function CollapsiblePanel() {
                 <TabContainer></TabContainer>
           </div>
       );
+        
+        useEffect(()=>{
+            const collapsibleButton = document.getElementById("collapsible-button");
+            collapsibleButton.addEventListener('mousedown', () => {
+                setIsCollapsed(true);
+            });
+        },[])
     return (
         <React.Fragment key="left">
-            <Button onClick={toggleDrawer(true)}>click me</Button>
             <Drawer
                 anchor="left"
                 open={isCollapsed}

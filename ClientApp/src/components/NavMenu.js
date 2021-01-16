@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Navbar, NavbarBrand} from 'reactstrap';
 
-
 import './NavMenu.scss';
 
 import IconButton from '@material-ui/core/IconButton';
@@ -10,14 +9,13 @@ import PeopleIcon from '@material-ui/icons/People';
 import BlobIconPNG from './blob.png';
 
 export default function NavMenu () {
-  
     return (
 
       <header>
         <Navbar className="tadoBar-color navbar-expand-sm navbar-toggleable-sm" dark>
           <Container>
             <div className="left-bar">
-              <IconButton aria-label="Menu" component="span">
+              <IconButton aria-label="Menu" component="span" id="collapsible-button">
               <MenuIcon className="tadoBarLButton"/>
               </IconButton>
               <IconButton aria-label="Friends Statistics" component="span">
@@ -33,7 +31,6 @@ export default function NavMenu () {
 
 
           </Container>
-
         </Navbar>
       </header>
     );
