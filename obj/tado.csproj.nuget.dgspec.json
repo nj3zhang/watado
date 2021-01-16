@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nicole/Desktop/tado/tado/tado.csproj": {}
+    "/Users/nicole/Desktop/watado/tado.csproj": {}
   },
   "projects": {
-    "/Users/nicole/Desktop/tado/tado/tado.csproj": {
+    "/Users/nicole/Desktop/watado/tado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nicole/Desktop/tado/tado/tado.csproj",
+        "projectUniqueName": "/Users/nicole/Desktop/watado/tado.csproj",
         "projectName": "tado",
-        "projectPath": "/Users/nicole/Desktop/tado/tado/tado.csproj",
+        "projectPath": "/Users/nicole/Desktop/watado/tado.csproj",
         "packagesPath": "/Users/nicole/.nuget/packages/",
-        "outputPath": "/Users/nicole/Desktop/tado/tado/obj/",
+        "outputPath": "/Users/nicole/Desktop/watado/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nicole/.config/NuGet/NuGet.Config"
+          "/Users/nicole/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -41,6 +41,28 @@
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
               "version": "[3.1.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.Extensions.Logging.AzureAppServices": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
