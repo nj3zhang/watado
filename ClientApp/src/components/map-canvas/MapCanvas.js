@@ -36,7 +36,8 @@ const MapCanvas = ({playersData}) => {
                 const matchedPlayers = playersData.filter((data) => data.tasksDone === i+1);
                 return (
                     [<CirclePos key={i} left={pos.left} top={pos.top} players={matchedPlayers} num={i+1}/>,
-                     <BlobPos key={i} left={pos.left} top={pos.top} player={matchedPlayers[0]} num={i+1} />]
+                     <BlobPos key={i} left={pos.left} top={pos.top} player={matchedPlayers[0]} num={i+1} />,
+                     <BlobPos key={i} left={pos.left-150} top={pos.top} player={matchedPlayers[1]} num={i+1} />]
                  );
             })}
 
