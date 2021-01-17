@@ -6,15 +6,7 @@ import './tab-container.scss';
 import PropTypes from 'prop-types';
 import TaskList from './task-list';
 import AddTaskForm from './AddTaskForm';
-
-const mockTaskObjects = [{
-    username: "user 1",
-    primaryTasks: [
-    {name: "my first task", description: "this is my first task"}, 
-    {name: "my second task", description: "this is my second task"}],
-    secondaryTasks: [ {name: "wash dishes", description: "this is my first task"}, 
-    {name: "walk dog", description: "this is my second task"}],
-}];
+import mockTaskObjects from '../../mockObj.json';
 
 const currentUser = "user 1";
 
@@ -45,7 +37,8 @@ export default function TabsContainer (){
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-    const currentTaskList = mockTaskObjects.find(obj => obj.username === currentUser);
+    
+    const currentTaskList = mockTaskObjects.usersObject.find(obj => obj.username === currentUser);
     return(
        <div className="tab-container">
            <AppBar style={{'backgroundColor': '#5A6A95'}} position="relative"> 

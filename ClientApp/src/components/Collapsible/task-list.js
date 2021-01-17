@@ -16,7 +16,7 @@ export default function TaskList (props) {
 
   const listComponent = list.map((task, index) => {
       return (
-          <li key={index}>
+          <li key={task.id}>
               <Checkbox
                     checked={state[index]}
                     onChange={(e) => handleChange(index, e)}

@@ -1,0 +1,44 @@
+{
+    "usersObject" : [
+        {
+            "username": "user 1",
+            "id": 1,
+            "tasksDone": "2",
+            "primaryTasks": [
+                {"id": 1, "name": "Walk dog", "description":  "this is my first task", "completed": true},
+                {"id": 2, "name": "Wash Dishes", "description": "this is my second task", "completed": false}
+            ],
+            "secondaryTasks": [
+                {"id": 3, "name": "Call Mom", "description":  "call mom at 6pm", "completed": false},
+                {"id": 4, "name": "Organize notes", "description": "organize notes from Econ", "completed": true}
+            ]
+        },
+
+        {
+            "username": "user 2",
+            "id": 2,
+            "tasksDone": "1",
+            "primaryTasks": [
+                {"id": 5, "name": "Go to the Doctor's", "description":  "this is my first task", "completed": false},
+                {"id": 6, "name": "Clean my room", "description": "this is my second task", "completed": false}
+            ],
+            "secondaryTasks": [
+                {"id": 7, "name": "Call Dad", "description":  "call dad at 6pm", "completed": true},
+                {"id": 8, "name": "Organize notes", "description": "organize notes from Econ", "completed": false}
+            ]
+        },
+        {
+            "username": "user 3",
+            "id": 3,
+            "tasksDone": "1",
+            "primaryTasks": [
+                {"id": 9, "name": "Go to the Doctor's", "description":  "this is my first task", "completed": false},
+                {"id": 10, "name": "Clean my room", "description": "this is my second task", "completed": false}
+            ],
+            "secondaryTasks": [
+                {"id": 11, "name": "Call Dad", "description":  "call dad at 6pm", "completed": true},
+                {"id": 12, "name": "Organize notes", "description": "organize notes from Econ", "completed": false}
+            ]
+        }
+    ]
+}
