@@ -9,7 +9,7 @@ import GreenBlob from '../photos/Green_Blob.png';
 
 const BlobPos = ({left, top, player, num}) => {
         if (player == null)
-            return 0;
+            return <div></div>;
 
         console.log("color " + player.color + " name "  +player.username + " num " + num);
         if (player.color == "blue"){
