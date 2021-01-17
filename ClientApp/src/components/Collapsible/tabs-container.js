@@ -5,7 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import './tab-container.scss';
 import PropTypes from 'prop-types';
 import TaskList from './task-list';
-import AddIcon from '@material-ui/icons/Add';
+import AddTaskForm from './AddTaskForm';
 
 const mockTaskObjects = [{
     username: "user 1",
@@ -54,7 +54,7 @@ export default function TabsContainer (){
                     <Tab label="Secondary Tasks" />
                </Tabs>
            </AppBar>
-           <AddIcon className="add-task" />
+           <AddTaskForm/>
            <TabPanel value={value} index={0}>
                 <TaskList list={currentTaskList.primaryTasks}/>
            </TabPanel>
