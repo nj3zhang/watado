@@ -2,6 +2,7 @@ import React, {useRef, useEffect} from 'react';
 import './MapCanvas.scss';
 import Map from './tado_path.svg';
 import CirclePos from "./CirclePos";
+import BlobPos from "./BlobPos";
 
 
 const hardPos = [
@@ -34,8 +35,9 @@ const MapCanvas = ({playersData}) => {
                 // Only render players in current position onto circles:
                 const matchedPlayers = playersData.filter((data) => data.tasksDone === i+1);
                 return (
-                    <CirclePos key={i} left={pos.left} top={pos.top} players={matchedPlayers} num={i+1} />
-                );
+                    [<CirclePos key={i} left={pos.left} top={pos.top} players={matchedPlayers} num={i+1}/>,
+                     <BlobPos key={i} left={pos.left} top={pos.top} player={matchedPlayers[0]} num={i+1} />]
+                 );
             })}
 
             {/* <CirclePos left={150} top={620} playerData={playerData} num={1} />

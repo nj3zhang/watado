@@ -11,7 +11,8 @@
             {"name": "wash dishes", "description": "this is my first task"}, 
             {"name": "walk dog", "description": "this is my second task"}
         ],
-        "currPlayer": true
+        "currPlayer": true,
+        "color": "blue"
     },
     {
         "id": 2,
@@ -24,7 +25,8 @@
         "secondaryTasks": [ 
             {"name": "wash dishes", "description": "this is my first task"}, 
             {"name": "walk dog", "description": "this is my second task"}
-        ]
+        ],
+        "color": "yellow"
     },
     {
         "id": 3,
@@ -37,7 +39,8 @@
         "secondaryTasks": [ 
             {"name": "wash asd", "description": "rew is my first task"}, 
             {"name": "walk s", "description": "this is my we task"}
-        ]
+        ],
+        "color": "green"
     },
     {
         "id": 4,
@@ -50,6 +53,7 @@
         "secondaryTasks": [ 
             {"name": "wash dishes", "description": "this is my ywj  task"}, 
             {"name": "walk rwer", "description": "this is my wer task"}
-        ]
+        ],
+        "color": "red"
     }
 ]
