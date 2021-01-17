@@ -4,6 +4,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Fade from '@material-ui/core/Fade';
+import { Link } from 'react-router-dom';
 
 export default function FadeMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -31,7 +32,9 @@ export default function FadeMenu() {
           <MenuItem disabled={true}>Total Points: {totalPoints}</MenuItem>
           <MenuItem className="menuItem" onClick={handleClose}>Profile</MenuItem>
           <MenuItem onClick={handleClose}>Settings</MenuItem>
-          <MenuItem onClick={handleClose}>Logout</MenuItem>
+          <Link to="/Login">
+              <MenuItem onClick={handleClose}>Logout</MenuItem>
+          </Link>
         </Menu>
       </div>
     );

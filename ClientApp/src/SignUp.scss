@@ -5,7 +5,7 @@ h3 {
     font-size: 36px;
 }
 
-img {
+.blob {
     width: 25%;
     margin: 0;
     transition: .5s ease;
@@ -16,6 +16,7 @@ img {
 .blob-container {
     position: absolute;
     top: 30%;
+    left: 5%;
 }
 
 
@@ -31,16 +32,23 @@ img {
     text-align: center;
   }
 
-    img:hover {
+    .blob:hover {
     opacity: 0.3;
   }
   
-  .mask{
-      opacity: 0;
-      padding: 30px;
+
+
+  .submit {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      background-color: #314780;
+      color: white;
+      width: 80px;
+      height: 40px;
+      border-radius: 10px;
   }
 
-   .mask:hover {
-    opacity: 1;
+  .submit:hover {
+      background-color: #4b69b6;
   }
-
