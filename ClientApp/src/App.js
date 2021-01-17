@@ -5,7 +5,7 @@ import MapCanvas from './components/map-canvas/MapCanvas';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import {Login} from "./Login";
-import {SignUp} from "./SignUp";
+import SignUp from "./SignUp";
 
 import './custom.scss'
 
