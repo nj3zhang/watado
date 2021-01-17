@@ -1,5 +1,11 @@
 import React, {useEffect} from 'react';
-import BlobIconPNG from './components/blob.png';
+import blueBlobIconPNG from './components/Blue_Blob.png';
+import greenBlobIconPNG from './components/Green_Blob.png';
+import redBlobIconPNG from './components/Red_Blob.png';
+import yellowBlobIconPNG from './components/Yellow_Blob.png';
+
+
+
 import './SignUp.scss';
 import { Link } from 'react-router-dom';
 
@@ -23,10 +29,10 @@ export default function SignUp () {
             <h3> Select your blob </h3>
 
             <div className="blob-container">
-                <img  className="blob" alt="1" src={BlobIconPNG}></img>
-                <img  className="blob" alt="2" src={BlobIconPNG}></img>
-                <img  className="blob" alt="3" src={BlobIconPNG}></img>
-                <img  className="blob" alt="4" src={BlobIconPNG}></img>
+                <img  className="blob" alt="1" src={blueBlobIconPNG}></img>
+                <img  className="blob" alt="2" src={greenBlobIconPNG}></img>
+                <img  className="blob" alt="3" src={redBlobIconPNG}></img>
+                <img  className="blob" alt="4" src={yellowBlobIconPNG}></img>
             </div>
             <Link to="/"> 
                 <button className="submit">Submit</button>

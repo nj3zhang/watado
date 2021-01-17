@@ -7,9 +7,12 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import AddIcon from '@material-ui/icons/Add';
 import TextField from '@material-ui/core/TextField';
-
+// import mockUsersObj from '../../mockObj.json';
+// const currentUser = "user 1";
 export default function MaxWidthDialog() {
   const [open, setOpen] = React.useState(false);
+  const [title, setTitle] = React.useState("");
+  const [description, setDescription] = React.useState("");
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -20,7 +23,7 @@ export default function MaxWidthDialog() {
   };
 
   const handleAdd = () => {
-    console.log("added");
+    console.log(title, description);
     setOpen(false);
   };
 
@@ -31,10 +34,10 @@ export default function MaxWidthDialog() {
         <DialogTitle id="max-width-dialog-title">Add Task</DialogTitle>
         <DialogContent>
             <DialogContentText >Title</DialogContentText>
-            <TextField multiline={true} id="outlined-basic" label="Add Title Here" placeholder="Add Title Here" variant="outlined" fullWidth={true}/>
+            <TextField onChange={(e)=>{setTitle(e.target.value)}}multiline={true} id="outlined-basic" label="Add Title Here" placeholder="Add Title Here" variant="outlined" fullWidth={true}/>
             <DialogContentText></DialogContentText>
             <DialogContentText>Description</DialogContentText>
-            <TextField rows='3' multiline={true} id="outlined-basic" label="Add Decription Here" placeholder="Add Decription Here" variant="outlined" fullWidth={true}/>
+            <TextField onChange={(e)=>{setDescription(e.target.value)}} rows='3' multiline={true} id="outlined-basic" label="Add Decription Here" placeholder="Add Decription Here" variant="outlined" fullWidth={true}/>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleAdd} color="primary">Add</Button>
