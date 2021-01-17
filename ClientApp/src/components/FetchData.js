@@ -52,10 +52,22 @@ export class FetchData extends Component {
   }
 
   async populateWeatherData() {
+<<<<<<< HEAD
     const response = await fetch('weatherforecast');
     console.log(response);
 
     const data = await response.json();
     this.setState({ forecasts: data, loading: false });
+=======
+    try {
+
+      const response = await fetch('weatherforecast');
+      const data = await response.json();
+      
+      this.setState({ forecasts: data, loading: false });
+    } catch (error) {
+        console.error(error)
+    }
+>>>>>>> c001fbb (Packaged up json in react and created PlayerData controller)
   }
 }
