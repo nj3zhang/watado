@@ -6,3 +6,14 @@
     width: 330px;
     overflow: auto;
 }
+
+.user-top-bar {
+    width: 330px;
+    height: 45px;
+    background-color: #5A6A95;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 1px 1px 2px black;
+}

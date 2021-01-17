@@ -18,7 +18,7 @@ export default function NavMenu () {
               <IconButton aria-label="Menu" component="span" id="collapsible-button">
               <MenuIcon className="tadoBarLButton"/>
               </IconButton>
-              <IconButton aria-label="Friends Statistics" component="span">
+              <IconButton aria-label="Friends Statistics" component="span" id="user-stats-button">
               <PeopleIcon className="tadoBarLButton"/>
               </IconButton>
             </div>
