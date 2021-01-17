@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// Test SignalR here.
 export class Counter extends Component {
   static displayName = Counter.name;
 
