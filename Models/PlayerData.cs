@@ -7,5 +7,7 @@ namespace watado.Models
         public string Name { get; set; }
         // public string[] ToDoList { get; set; }
         public int TasksDone { get; set; }
+
+        
     }
 }

@@ -1,23 +1,55 @@
 [
     {
         "id": 1,
-        "name": "Jeff",
+        "username": "Jeff",
         "tasksDone": 1,
+        "primaryTasks": [
+            {"name": "my first task", "description": "this is my first task"}, 
+            {"name": "my second task", "description": "this is my second task"}
+        ],
+        "secondaryTasks": [ 
+            {"name": "wash dishes", "description": "this is my first task"}, 
+            {"name": "walk dog", "description": "this is my second task"}
+        ],
         "currPlayer": true
     },
     {
         "id": 2,
-        "name": "Caleb",
-        "tasksDone": 3
+        "username": "Caleb",
+        "tasksDone": 3,
+        "primaryTasks": [
+            {"name": "my first real task", "description": "this is my first task"}, 
+            {"name": "my second face task", "description": "this is my  task"}
+        ],
+        "secondaryTasks": [ 
+            {"name": "wash dishes", "description": "this is my first task"}, 
+            {"name": "walk dog", "description": "this is my second task"}
+        ]
     },
     {
         "id": 3,
-        "name": "Nicole",
-        "tasksDone": 3
+        "username": "Nicole",
+        "tasksDone": 3,
+        "primaryTasks": [
+            {"name": "my asdf real task", "description": "this is g first task"}, 
+            {"name": "my adsfasd face task", "description": "this is my ewr task"}
+        ],
+        "secondaryTasks": [ 
+            {"name": "wash asd", "description": "rew is my first task"}, 
+            {"name": "walk s", "description": "this is my we task"}
+        ]
     },
     {
         "id": 4,
-        "name": "Anda",
-        "tasksDone": 6
+        "username": "Anda",
+        "tasksDone": 6,
+        "primaryTasks": [
+            {"name": "my first real task", "description": "wer is my first task"}, 
+            {"name": "my second wre task", "description": "this is my  task"}
+        ],
+        "secondaryTasks": [ 
+            {"name": "wash dishes", "description": "this is my ywj  task"}, 
+            {"name": "walk rwer", "description": "this is my wer task"}
+        ]
     }
 ]

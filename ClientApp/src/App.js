@@ -30,6 +30,11 @@ const App = () => {
           .build();
 
       setConnection(newConnection);
+      const newData = window.localStorage.getItem('username')
+      const userData = TestData.filter((d) => newData === d.username);
+      latestPlayersData.current=[userData];
+      console.log(latestPlayersData.current);
+      // sendData(latestPlayersData.current[0])
   }, []);
 
   useEffect(() => {
@@ -66,7 +71,7 @@ const App = () => {
   const sendData = async (user) => {
     const data = {
         userId: user.id,
-        name: user.name,
+        name: user.username,
         tasksDone: user.tasksDone
     };
 
@@ -87,7 +92,19 @@ const App = () => {
 
   return (
     <Switch>
-      <Route exact path='/login' component={Login} />
+      <Route exact path='/login' render={(props) => (
+        <Login {...props} 
+          setSessionData={(session, user) => {
+
+            // Filter for user name who logged in:
+            // sendData(userData);
+            
+            console.log(user)
+            window.localStorage.setItem('username', user);
+            setTimeout(() => window.location.href = window.location.origin+'/SignUp', 1000);
+          }}
+        />  
+      )} />
       <Route exact path='/signup' component={SignUp} />
       <Layout>
         <Route exact path='/' render={(props) => (

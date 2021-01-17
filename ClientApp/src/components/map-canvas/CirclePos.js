@@ -5,7 +5,7 @@ import './CirclePos.scss';
 const CirclePos = ({left, top, players, num}) => {
     // TODO: Fix positions of other players if you have time. 
     const playerNames = players.map((player) => {
-        return player.name + (player.currPlayer ? " (You)" : "");
+        return player.username + (player.currPlayer ? " (You)" : "");
     }).join(' + ');
 
     return (

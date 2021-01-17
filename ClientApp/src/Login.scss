@@ -3,10 +3,10 @@ h1 {
     text-align: center;
 }
 
-img {
+img.login {
     margin-left: 5%;
     height: auto;
-    max-width: auto;
+    width: 45%;
 }
 
 .verticalLine {
@@ -25,6 +25,13 @@ img {
     width: 500px;
     margin-top: 80px;
     margin-left: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
