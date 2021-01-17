@@ -2,9 +2,6 @@ import React, {useState} from 'react';
 import './Login.scss';
 import {Button, TextField, InputAdornment} from '@material-ui/core';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import { Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
-
 
 import Ghost from'./assets/Blob_Login.png'
 
