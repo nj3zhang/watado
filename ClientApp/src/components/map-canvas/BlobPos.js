@@ -11,31 +11,30 @@ const BlobPos = ({left, top, player, num}) => {
         if (player == null)
             return 0;
 
-        var blobType = player.id == 1 ? "mainBlob-pos" : "leftBlob-pos";
         console.log("color " + player.color + " name "  +player.username + " num " + num);
-        if (player.color = "blue"){
+        if (player.color == "blue"){
             return (
                 <div className="mainBlob-pos" style={{left: `${left}px`, top: `${top-50}px`}}>
                     <img src={BlueBlob} width='200px' height='190px'/>
                 </div>
             );
         
-        } else if (player.color = "red"){
+        } else if (player.color == "red"){
             return (
-                <div className="leftBlob-pos" style={{left: `${left}px`, top: `${top-50}px`}}>
+                <div className="leftBlob-pos" style={{left: `${left-50}px`, top: `${top-50}px`}}>
                     <img src={RedBlob} width='200px' height='190px'/>
                 </div>
             );
         
-        } else if (player.color = "green"){
+        } else if (player.color == "green"){
             return (
-                <div className="leftBlob-pos" style={{left: `${left}px`, top: `${top-50}px`}}>
+                <div className="leftBlob-pos" style={{left: `${left-50}px`, top: `${top-50}px`}}>
                     <img src={GreenBlob} width='200px' height='190px'/>
                 </div>
             );
         } else {
             return (
-                <div className="leftBlob-pos" style={{left: `${left}px`, top: `${top-50}px`}}>
+                <div className="leftBlob-pos" style={{left: `${left-50}px`, top: `${top-50}px`}}>
                     <img src={YellowBlob} width='200px' height='190px'/>
                 </div>
             );
