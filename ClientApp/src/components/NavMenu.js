@@ -7,7 +7,6 @@ import './NavMenu.scss';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import PeopleIcon from '@material-ui/icons/People';
-import BlobIconPNG from './blob.png';
 
 export default function NavMenu () {
     return (
@@ -19,7 +18,7 @@ export default function NavMenu () {
               <IconButton aria-label="Menu" component="span" id="collapsible-button">
               <MenuIcon className="tadoBarLButton"/>
               </IconButton>
-              <IconButton aria-label="Friends Statistics" component="span">
+              <IconButton aria-label="Friends Statistics" component="span" id="user-stats-button">
               <PeopleIcon className="tadoBarLButton"/>
               </IconButton>
             </div>
